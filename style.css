@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Quando');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', serif;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+header> div {
+    justify-content: flex-end;
+    min-height: 50px;
+    background-color: black;
+}
+
+header ul {
+    justify-content: flex-end;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 50px; 
+    padding: 0 5px;
+}
+
+header ul li:hover {
+    background-color: #657EB9;
+    transition: 0.3s;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/78783/submachine-gun-rifle-automatic-weapon-weapon-78783.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Quando', serif;
+}
+
+.gallery, .cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 400px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+
+.cards [class*="img"] {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    color: navy;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cards .layer {
+    width: 100%;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+    opacity: 0;
+}
+
+.cards .layer:hover {
+    opacity: 0.4;
+}
+
+.cards .img1 {
+    background-image: url(http://strzelnica-torun.pl/wp-content/uploads/2013/05/Glock%2021.png);
+}
+
+.cards .img2 {
+    background-image: url(https://www.bron.pl/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/2/7/277_28_84_0-10419.jpg);
+}
+
+.cards .img3 {
+    background-image: url(http://mysliwskizlotoryja.pl/787-thickbox_default/pistolet-cz-75-sp-01-shadow.jpg);
+}
+
+.cards .img4 {
+    background-image: url(https://www.militaria.pl/upload/wysiwyg/gfx/produkty/ASG/ActionSportGamesNEW/strzelba_ASG_Franchi_sps12_16061/strzelba_ASG_Franchi_sps12_16061.jpg);
+}
+
+.cards .img5 {
+    background-image: url(http://www.kaliber.pl/111776-1393-thickbox/strzelba-horyzontalna-pedersoli-side-by-side-slug.jpg);
+}
+
+.cards .img6 {
+    background-image: url(https://basspro.scene7.com/is/image/BassPro/master1_100008395_main?$Prod%5FPLPThumb$);
+}
+
+.cards .img7 {
+    background-image: url(http://www.kaliber.pl/117840-7728-thickbox/karabin-bocznego-zaplonu-colt-m4-carbine-22-lr-2766299.jpg);
+}
+
+.cards .img8 {
+    background-image: url(https://media1.britannica.com/eb-media/70/123170-004-E7FBD22B.jpg);
+}
+
+.cards .img9 {
+    background-image: url(http://vignette2.wikia.nocookie.net/black/images/b/b2/M16-a3.jpg/revision/latest?cb=20090618011825);
+}
+
+.cards .img10 {
+    background-image: url(http://www.airsoft-gun.org/toko-airsoft-gun/image/cache/data/new22/Products5389-1200x800-107358-500x500.jpg);
+}
+
+footer div {
+    background-color: black;
+    min-height: 50px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+footer div.big {
+    flex-grow: 2;
+}
